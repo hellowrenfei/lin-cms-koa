@@ -1,12 +1,12 @@
 'use strict';
 
-let siteDomain;
+let siteDomain = 'http://localhost:5000';
 switch (process.env.NODE_ENV) {
   case 'development':
-    siteDomain = 'http://localhost:5000/';
+    siteDomain = 'http://localhost:5000';
     break;
   case 'production':
-    siteDomain = '';
+    siteDomain = 'http://localhost:5000';
     break;
 }
 module.exports = {
